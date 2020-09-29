@@ -1,0 +1,61 @@
+<!doctype html>
+<title>Site Maintenance</title>
+<style>
+  body { text-align: center; padding: 150px; }
+  h1 { font-size: 50px; }
+  body { font: 20px Helvetica, sans-serif; color: #333; }
+  article { display: block; text-align: left; width: 650px; margin: 0 auto; }
+  a { color: #dc8100; text-decoration: none; }
+  a:hover { color: #333; text-decoration: none; }
+  
+  .topleft {
+    position: absolute;
+    top: 20px;
+    left: 16px;
+  }
+  .bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+  }
+
+</style>
+
+<article>
+   <div class="topleft">
+    <a href="https://www.hopbuys.com">
+        <img src="https://hopbuys.com/wp-content/uploads/2020/03/Mobiel-Logo-150-x-50-pixelsValue.png" alt="logo"></a>
+   </div>
+    <h1>COMING SOON</h1>
+    <div>
+        <p>Our website is under construction. Stay tuned for something amazing! </p>
+        <p>&mdash; The Team</p>
+    </div>
+    <div class="bottomleft">
+        <p>power by <a href="https://www.hopbuys.com">Hopbuys</a></p>
+    </div>
+</article>
+<!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v8.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="2146206962085483"
+  theme_color="#0084ff">
+      </div>
